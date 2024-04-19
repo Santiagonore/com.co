@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Banner Principal con Barra de Navegación -->
+        <div class="banner">
+            <nav>
+                <ul>
+                    <center><img src="logo.png" alt="" width="200px"></center>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Quiénes Somos</a></li>
+                    <li><a href="#products">Productos/Servicios</a></li>
+                    <li><a href="#contact">Contáctenos</a></li>
+                </ul>
+            </nav>
+            <h1>LA CASA DE LOS VIDEOJUEGOS</h1>
+            
+        </div>
+        
+    </header>
+    <main>
+        <!-- Sección Principal -->
+        <section id="home">
+            
+            <center><img src="mario.png" alt="" onclick="mostrarTexto()"></center>
+            <p id="texto">Sumérgete en un mundo de diversión y entretenimiento con nuestra amplia selección de los últimos
+                lanzamientos, clásicos atemporales y las consolas más innovadoras. Desde aventuras épicas hasta
+                emocionantes partidas multijugador, tenemos todo lo que necesitas para vivir experiencias inolvidables.
+                Visita nuestra página web ahora y únete a la comunidad de jugadores apasionados. ¡La diversión te espera
+                en cada clic!. </p>
+            <!-- Contenido de la página principal -->
+        </section>
+        <!-- Sección Quiénes Somos -->
+        <section id="about">
+            <h2>Quiénes Somos</h2>
+            <div class="about-content">
+                <div class="about-block">
+                    <h3>Misión</h3>
+                    <p>"Nuestra misión es proporcionar a los entusiastas de los videojuegos una experiencia excepcional
+                        al ofrecer una amplia selección de juegos, hardware y accesorios de alta calidad. Nos esforzamos
+                        por crear un ambiente acogedor y amigable donde los jugadores de todas las edades y habilidades
+                        puedan encontrar lo que necesitan y descubrir nuevas experiencias de juego. </p>
+                </div>
+                <div class="about-block">
+                    <h3>Visión</h3>
+                    <p>"Nos visualizamos como la principal autoridad en entretenimiento interactivo, siendo reconocidos
+                        como el destino definitivo para los jugadores de todas las edades y niveles de experiencia.
+                        Buscamos ser un punto de referencia en la industria del gaming, ofreciendo la más amplia
+                        selección de juegos, hardware y accesorios de calidad superior. Nuestra visión es ser un centro
+                        comunitario para los aficionados a los videojuegos, donde puedan reunirse, compartir su pasión y
+                        encontrar inspiración.</p>
+                </div>
+                <div class="about-block">
+                    <h3>Finalidad de la Empresa</h3>
+                    <p>1-Entretener y Divertirb<br>
+                        2-Innovar y Crear Experiencias Únicas<br>
+                        3-Conectar a la Comunidad de Jugadores<br>
+                        4-Fomentar la Creatividad y el Talento<br>
+                        5-Generar Beneficios Económicos</p>
+                </div>
+                <div class="about-block">
+                    <h3>Valores Corporativos</h3>
+                    <p>1-Pasión por el Juego<br>
+                        2-Innovación<br>
+                        3-Integridad<br>
+                        4-Diversidad e Inclusión<br>
+                        5-Colaboración y Trabajo en Equipo<br>
+                        6-Servicio al Cliente<br>
+                        7-Responsabilidad Social y Ambiental<br>
+                        8-Aprendizaje Continuo</p>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Productos/Servicios -->
+        <main>
+            <!-- Contenido principal -->
+            <!-- Sección Productos/Servicios -->
+            <section id="products">
+                <h2>Productos/Servicios</h2>
+                <div class="container">
+                    <div class="product-selection">
+                        <button onclick="toggleProductOptions()">Seleccionar Productos o Servicios</button>
+                        <div id="product-options" class="product-options hidden">
+                            <select id="product-categories" onchange="selectCategory(this.value)">
+                                <option value="todos">Todos</option>
+                                <option value="consolas">Consolas</option>
+                                <option value="accesorios">Accesorios</option>
+                                <option value="peliculas">Peliculas</option>
+                                <option value="Servicios">Servicios</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="products-content">
+                        <!-- Contenido de los productos se mostrará aquí -->
+                        <div class="product" id="consola1" style="display: none;">
+                            <img src="https://cdn.colombia.com/sdi/2020/03/04/aniversario-playstation-2-consola-mas-vendida-de-la-historia-815884.jpg"
+                                alt="play station 2">
+                            <h3>Play station 2 </h3>
+                            <p>Segunda videoconsola de sobremesa descatalogada producida por Sony Computer
+                                Entertainment.</p>
+                            <p>Precio: $689.250</p>
+                        </div>
+                        <div class="product" id="consola2" style="display: none;">
+                            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/05/ps4-1937133.jpg?tf=1200x.jpg"
+                                alt="halo">
+                            <h3>Play station 4</h3>
+                            <p>La PS4 de Sony está disponible en tres versiones; la PlayStation 4, la PlayStation 4 Slim
+                                y la PlayStation 4 Pro.</p>
+                            <p>Precio: $1.750.00</p>
+                        </div>
+                        <div class="product" id="consola3" style="display: none;">
+                            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/01/ps5-2930282.jpg?tf=1200x.jpg"
+                                alt="halo">
+                            <h3>Play station 5</h3>
+                            <p>Sony apuesta por la innovación con un mando DualSense que es el compañero perfecto para
+                                un hardware muy potente</p>
+                            <p>Precio: $2.495.880</p>
+                        </div>
+                        <div class="product" id="consola4" style="display: none;">
+                            <img src="https://quo.mx/cdn-cgi/imagedelivery/p5chAiYHu3n1S1RzGewgOQ/quo.mx/2023/08/diferencia-entre-xbox-one-y-xbox-one-s.png/w=1456,h=816.jpg"
+                                alt="halo">
+                            <h3>Xbox one</h3>
+                            <p>La Xbox One cuenta con un hardware potente que incluye una CPU de 8 núcleos, una GPU
+                                personalizada y 8 GB de memoria RAM, lo que le permite ejecutar juegos de alta calidad y
+                                proporcionar una experiencia de juego fluida.</p>
+                            <p>Precio: $1.349.990</p>
+                        </div>
+                        <div class="product" id="consola5" style="display: none;">
+                            <img src="https://i.ytimg.com/vi/NqPeeO-7yT4/maxresdefault.jpg" alt="halo">
+                            <h3>Xbox serie x</h3>
+                            <p>La Xbox Series X es la consola de videojuegos de última generación desarrollada por
+                                Microsoft, lanzada en noviembre de 2020. Es parte de la serie Xbox de consolas y
+                                representa un salto significativo en términos de potencia y rendimiento con respecto a
+                                las generaciones anteriores.
+                            </p>
+                            <p>Precio: $2.045.3505</p>
+                        </div>
+                        <div class="product" id="consola6" style="display: none;">
+                            <img src="https://nexoplay.com/wp-content/uploads/2024/03/PSP-Defined-Featured-small.jpg"
+                                alt="halo">
+                            <h3>Psp</h3>
+                            <p> La PSP fue la primera incursión de Sony en el mercado de las consolas portátiles y se
+                                convirtió en un dispositivo muy popular debido a su potencia, portabilidad y biblioteca
+                                de juegos.
+                            </p>
+                            <p>Precio: $499.900</p>
+                        </div>
+                        <div class="product" id="consola7" style="display: none;">
+                            <img src=" https://i.blogs.es/09fb11/nintendo-switch-2024/1366_2000.jpeg" alt="halo">
+                            <h3>Nintendo switch</h3>
+                            <p>la Nintendo Switch es una consola de videojuegos versátil y innovadora que ofrece una
+                                experiencia de juego única tanto en casa como fuera de ella. Con su capacidad para
+                                cambiar entre modos de juego y una sólida biblioteca de juegos, ha ganado un lugar
+                                destacado en el mundo de los videojuegos.
+                            </p>
+                            <p>Precio: $896.263</p>
+                        </div>
+                        <div class="product" id="consola8" style="display: none;">
+                            <img src="https://karamelovirtual.com/cdn/shop/files/image-2d186ac31c5d4e89ae70ad528460ad46.webp?v=1697296045.jpg"
+                                alt="halo">
+                            <h3>consola retro m8 game stick</h3>
+                            <p>El M8 Game Stick es una consola de videojuegos retro que emula varios sistemas de juegos
+                                clásicos y se presenta en un formato compacto similar a un USB stick.
+                            </p>
+                            <p>Precio: $119.000</p>
+                        </div>
+
+                        <!-- Productos de accesorios -->
+                        <div class="product" id="accesorio1" style="display: none;">
+                            <img src="  https://cdn.pixabay.com/photo/2021/10/07/20/46/playstation-6689793_640.jpg">
+                            <h3>control sencillo play 4</h3>
+                            <p>Este es un control sencillo para alguien que apenas esta empezando en el mundo de los
+                                video juegos.</p>
+                            <p>Precio: $100.000</p><!-- Contenido del primer accesorio -->
+                        </div>
+                        <div class="product" id="accesorio2" style="display: none;">
+                            <img src="https://i.pinimg.com/550x/2b/0c/87/2b0c87d4b4ea7d7c904645ea29ad7054.jpg">
+                            <h3>control personalizado Play 4</h3>
+                            <p>Este es un control muy efectivo para los jugadores mas activos por que tieen unas muy
+                                buenas modificaciones.</p>
+                            <p>Precio: $130.000</p><!-- Contenido del primer accesorio -->
+                        </div>
+                        <div class="product" id="accesorio3" style="display: none;">
+                            <img src="https://i.blogs.es/5c3495/logitech-g29-y-palanca-de-cambios/840_560.jpeg">
+                            <h3>Volante todo incluido</h3>
+                            <p>es una réplica de un volante de automóvil real, con un diseño ergonómico que se adapta
+                                cómodamente a las manos del jugador. Puede tener características adicionales como
+                                agarres de goma para mayor comodidad y precisión.
+                            </p>
+                            <p>Precio: $248.718</p><!-- Contenido del primer accesorio -->
+                        </div>
+                        <div class="product" id="accesorio4" style="display: none;">
+                            <img src="https://m.media-amazon.com/images/I/71vg6z4VE6L._AC_SL1500_.jpg">
+                            <h3>Soporte para controles </h3>
+                            <p>es un accesorio diseñado para almacenar, organizar y exhibir tus controles de manera
+                                ordenada y accesible. Estos soportes vienen en una variedad de estilos y diseños para
+                                adaptarse a diferentes necesidades y preferencias de los usuarios. </p>
+                            <p>Precio: $45.000</p><!-- Contenido del primer accesorio -->
+                        </div>
+                        <div class="product" id="accesorio5" style="display: none;">
+                            <img
+                                src="https://es.digitaltrends.com/wp-content/uploads/2021/11/razer-nari-ultimate.jpg?fit=720%2C720&p=1.jpg">
+                            <h3>Audifonos gamer</h3>
+                            <p>son dispositivos diseñados específicamente para brindar una experiencia de audio
+                                inmersiva y de alta calidad durante el juego. </p>
+                            <p>Precio: $80.000</p><!-- Contenido del primer accesorio -->
+                        </div>
+                        <div class="product" id="accesorio6" style="display: none;">
+                            <img
+                                src="https://ae01.alicdn.com/kf/S067cf0b527bb4714a69ed841403e93edo.jpg_640x640Q90.jpg_.webp.jpg">
+                            <h3>Sillas gamer</h3>
+                            <p>son sillas diseñadas específicamente para brindar comodidad y soporte durante largas
+                                sesiones de juego. </p>
+                            <p>Precio: $1.000.000</p><!-- Contenido del primer accesorio -->
+                        </div>
+                        <div class="product" id="peliculas1" style="display: none;">
+                            <img
+                                src="https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2022/10/god-war-ragnarok-2851685.jpg?tf=3840x.jpg">
+                            <h3>god of war</h3>
+                            <p>La trama sigue las aventuras de Kratos, un guerrero espartano que busca venganza contra
+                                los dioses griegos. La historia está basada en la mitología griega y sigue a Kratos
+                                mientras lucha contra criaturas mitológicas, resuelve acertijos y se enfrenta a desafíos
+                                épicos para alcanzar su objetivo final.</p>
+                            <p>Precio: $100.000</p>
+                        </div>
+                        <div class="product" id="peliculas2" style="display: none;">
+                            <img
+                                src=" https://www.guiltybit.com/wp-content/uploads/2018/01/Serie-de-Halo-de-Steven-Spielgberg.jpg">
+                            <h3>Halo</h3>
+                            <p>es una franquicia de videojuegos de ciencia ficción creada por Bungie, ahora desarrollada
+                                por 343 Industries, que se centra en un conflicto intergaláctico entre la humanidad y
+                                una raza alienígena conocida como los Covenant, así como en los enfrentamientos entre
+                                diferentes facciones dentro de la humanidad misma.</p>
+                            <p>Precio: $120.000</p>
+                        </div>
+                        <div class="product" id="peliculas3" style="display: none;">
+                            <img
+                                src="  https://media.revistagq.com/photos/641abdcf1ea74f459398c16e/16:9/w_2560%2Cc_limit/gears-of-war-netflix.jpg">
+                            <h3>Gears of War</h3>
+                            <p>se centra en combates intensos y tácticos, con un énfasis en la cobertura y el trabajo en
+                                equipo. Los jugadores pueden usar un sistema de cobertura para protegerse del fuego
+                                enemigo y realizar maniobras tácticas para flanquear a los enemigos. La franquicia
+                                también es conocida por sus armas icónicas y su modo multijugador competitivo.</p>
+                            <p>Precio: $150.000</p>
+                        </div>
+                        <div class="product" id="peliculas4" style="display: none;">
+                            <img
+                                src="https://media.revistagq.com/photos/6128c5b38a49f53b4b9cfe57/master/w_1600%2Cc_limit/Call_of_Duty_1.jpeg">
+                            <h3>Call of Duty</h3>
+                            <p>suelen estar ambientados en diferentes períodos históricos y escenarios modernos o
+                                futuristas, ofreciendo una variedad de experiencias de combate que van desde la Segunda
+                                Guerra Mundial hasta conflictos militares contemporáneos y futuristas. La serie se ha
+                                expandido a múltiples subseries, incluyendo "Modern Warfare", "Black Ops" y "Warzone",
+                                cada una con su propio enfoque temático y jugabilidad única.</p>
+                            <p>Precio: $130.000</p>
+                        </div>
+                        <div class="products-content">
+                            <!-- Contenido de los productos se mostrará aquí -->
+                            <div class="product" id="Servicios" style="display: none;">
+                                <img src="https://www.masgamers.com/wp-content/uploads/2022/04/33.jpg"
+                                    alt="Servicios">
+                                <h3>Los servicios que ofrecemos como Empresa</h3>
+                                <p>Segunda videoconsola de sobremesa descatalogada producida por Sony Computer
+                                    Entertainment.</p>
+                                <p>
+                                    <br> 1-Venta de videojuegos: Ofrecer una amplia selección de videojuegos para diferentes consolas y plataformas, tanto nuevos como usados.<br>
+                                    <br> 2-Consolas y accesorios: Además de los videojuegos, la tienda podría vender consolas de diferentes generaciones (PlayStation, Xbox, Nintendo, etc.) y una variedad de accesorios como controles, auriculares, cables, etc.<br>
+                                    <br> 3-Preventa y reservas: Permitir a los clientes reservar o preordenar próximos lanzamientos de videojuegos para asegurarse de obtener una copia el día del lanzamiento.<br>
+                                    <br> 4-Compra y canje de juegos usados: Ofrecer un servicio donde los clientes puedan vender o canjear sus juegos usados por crédito en la tienda o dinero en efectivo.<br>
+                                    <br> 5-Reparación de consolas y accesorios: Proporcionar servicios de reparación para consolas y accesorios dañados, como reemplazo de pantallas, reparación de controles, etc.<br>
+                                    <br> 6-Alquiler de videojuegos: Permitir a los clientes alquilar videojuegos por un período de tiempo determinado, lo que les permite probar el juego antes de comprarlo o disfrutar de una variedad de juegos sin tener que comprarlos todos.<br>
+                                    <br> 7-Eventos y torneos: Organizar eventos, torneos y competiciones de videojuegos tanto en la tienda como en línea, para crear comunidad y fomentar la interacción entre los jugadores.<br>
+                                    <br> 8-Venta de mercancía relacionada: Ofrecer mercancía relacionada con videojuegos, como camisetas, figuras de acción, pósters y otros productos coleccionables.<br>
+                                    <br>  9-Asesoramiento y recomendaciones: Proporcionar asesoramiento experto y recomendaciones personalizadas a los clientes sobre qué juegos comprar en función de sus intereses, preferencias y edad.<br>
+                                    <br>  10-Servicio de atención al cliente: Brindar un servicio al cliente excepcional, ayudando a los clientes con preguntas, problemas técnicos o consultas sobre productos.</p>
+                                
+                            </div>
+                    </div>
+            </section>
+            <!-- Más secciones según tu estructura -->
+        </main>
+        </head>
+
+        <body>
+            </div>
+            <!-- Repite el mismo formato para los demás productos -->
+            </div>
+            </section>
+
+            <!-- Sección Contáctenos -->
+            <section id="contact">
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Contáctenos</h2>
+            <form action="#" onsubmit="return validateForm()">
+                <label for="name">Nombres y Apellidos:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="birthdate">Fecha de Nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate" required><br>
+
+                <label for="phone">Número Telefónico:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="gender">Género:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Seleccionar</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Femenino</option>
+                    <option value="other">Otro</option>
+                </select><br>
+
+                <label for="suggestion">Sugerencias:</label>
+                <textarea id="suggestion" name="suggestion"></textarea><br>
+
+                <label for="schedule">Selección de Horario Disponible:</label>
+                <select id="schedule" name="schedule" required>
+                    <option value="">Seleccionar</option>
+                    <option value="morning">Mañana</option>
+                    <option value="afternoon">Tarde</option>
+                    <option value="night">Noche</option>
+                    <option value="weekend">Fin de Semana</option>
+                </select><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="success-message" style="display: none; color: green;">¡Envío exitoso!</p>
+        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <!-- Banner de Pie de Página -->
+        <div class="footer-banner">
+            <p>Derechos Reservados © 2024 - Desarrollado por Web Máster</p>
+        </div>
+        <!-- Sección de Redes Sociales -->
+        <div class="social-media">
+            <a href="https://maps.app.goo.gl/HeawhectW6qKHEgw6" target="_blank">¿Cómo llegar?</a></p>
+            <a href="https://www.facebook.com/BodegaDelVideoJuego/?locale=es_LA" target="_blank">Facebook</a></p>
+            <a href="https://twitter.com/bodegavi" target="_blank">Twitter</a></p>
+            <a href="https://www.instagram.com/bodegadelvideojuego/" target="_blank">Instagram</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
